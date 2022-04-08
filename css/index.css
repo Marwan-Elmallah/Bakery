@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav .nav-logo img {
+    width: 150px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+
+nav .nav-links li {
+    margin-right: 18px;
+    font-size: 16px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    transition: 0.25s;
+}
+
+nav .nav-links li a:hover {
+    color: #8f7854;
+}
+
+header {
+    background: url('../img/home.jpeg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header p {
+    margin-bottom: 18px;
+    color: #ccc;
+}
+
+header h1 {
+    color: white;
+    margin: 24px 0;
+    font-size: 50px;
+}
+
+header .btn-container button {
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+header .btn-container {
+    margin-top: 20px;
+}
+
+header .btn-container button:first-child {
+    background-color: #8f7854;
+    border: 1px solid #8f7854;
+}
+
+header .btn-container button:first-child:hover {
+    background-color: white;
+    color: #8f7854;
+    border-color: white;
+}
+
+header .btn-container button:last-child {
+    border: 2px solid white;
+}
+
+header .btn-container button:last-child:hover {
+    background-color: white;
+    color: #8f7854;
+    border-color: white;
+}
+
+.who-we-are {
+    display: flex;
+    justify-content: center;
+}
+
+.who-we-are .section-left,
+.who-we-are .section-right {
+    width: 50%;
+    margin: 50px;
+}
+
+.who-we-are .section-left img {
+    width: 80%;
+}
+
+.who-we-are .section-right h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+
+.who-we-are .section-right p {
+    text-align: center;
+    margin: 20px;
+    color: #686868;
+    font-family: sans-serif, monospace;
+    line-height: 1.86em;
+}
+
+.who-we-are .section-right ul {
+    list-style: none;
+    margin: 10px;
+    color: #686868;
+    font-family: "Alegreya Sans", sans-serif, monospace;
+    line-height: 1.86em;
+}
+
+.Our-Baking {
+    text-align: center;
+}
+
+.top p {
+    margin: 30px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.bottom img {
+    width: 75%;
+    margin: 10px;
+}
+
+.bottom p {
+    margin: 30px;
+    color: #686868;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.Contact .section-left {
+    width: 50%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.Contact .section-left .h2,
+.Contact .section-left p {
+    padding-top: 20px;
+
+    margin: 20px;
+}
+
+.Contact .section-left p,
+.Contact .section-left .our,
+.Contact .section-left li {
+    color: #686868;
+}
+
+.Contact .section-left .our,
+.Contact .section-left li {
+    margin: 20px;
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background: #403d38;
+}
+
+.info h3 {
+    margin: 10px;
+    color: white;
+}
+
+.info .About-Us,
+.info .Special,
+.info .Opening-Hours,
+.info .Contact-Details {
+    padding-left: 50px;
+    width: 25%;
+
+}
+
+.info .About-Us p {
+    margin: 10px;
+    color: #969696;
+}
+
+.info .Special p,
+.info .Opening-Hours p {
+    margin: 10px;
+    color: #969696;
+}
+
+hr {
+    border: 1px solid #fff1;
+}
+
+.info .Contact-Details a {
+    color: #969696;
+    text-align: left;
+    text-decoration: none;
+}
+
+.info .Contact-Details a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.info .Contact-Details hr {
+    margin: 10px;
+}
+
+footer {
+    background-color: #353330;
+    padding: 30px;
+}
+
+footer p {
+    color: #969696;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .footer-logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer .footer-logo img {
+    width: 20%;
+}
